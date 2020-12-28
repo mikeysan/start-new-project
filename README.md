@@ -1,6 +1,6 @@
 # Create a new project folder and setup git using a python script
 
-This litte project was inspired by a youtube video I watched the other day about automating everyday things with python
+This litte project was inspired by a [youtube video](https://youtu.be/7Y8Ppin12r4) I watched the other day about automating everyday things with python
 
 ## Assumptions or requirements
 
