@@ -13,6 +13,15 @@ if sys.platform.startswith('win'):
     print(changeWorkingPath)
 elif sys.platform.startswith('linux'):
     print("You are on Linux")
+    # We will do the same thing here too
+    # enter a development path for Linux as input
+    # example: /home/spade/development
+    print("Enter your full development path\n")
+    print("For example: /home/spade/development\n")
+    path = os.chdir(input(r'Enter path: '))
+    changeWorkingPath = os.getcwd()
+    print(changeWorkingPath)
+
 elif sys.platform.startswith('darwin'):
     print("You are on a Mac OS")
 else:
