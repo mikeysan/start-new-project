@@ -1,4 +1,3 @@
-"# start-new-project"
 # Create a new project folder and setup git using a python script
 
 This litte project was inspired by a youtube video I watched the other day about automating everyday things with python
