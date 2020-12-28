@@ -7,6 +7,8 @@ if sys.platform.startswith('win'):
     print("Enter your full development path\n")
     print("For example: C:\\Users\\phil4\\Documents\\development\n")
     path = os.chdir(input(r'Enter path: '))
+    # the next two lines are just to check that we were successful in changing the current working directory
+    #TODO: Will need to add an if statement to test that before moving on again
     changeWorkingPath = os.getcwd()
     print(changeWorkingPath)
 elif sys.platform.startswith('linux'):
