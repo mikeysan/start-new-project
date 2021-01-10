@@ -1,10 +1,16 @@
 import sys
 import os
 
+'''
+    USAGE: python create_project.py [folder-name]
+'''
+
 # Change current working directory of this script to match where you would like to create your 
 # new project folder
 # CHANGE THIS LINE TO MATCH YOUR USE CASE
-chgDir = os.chdir('C:\\Users\\phil4\\Documents\\development')
+
+# TODO: Change path to match your environment
+chgDir = os.chdir('/home/sspade/Documents/development')
 
 # This script expects an argument that will be the folder name to create
 foldername = str(sys.argv[1])

@@ -17,7 +17,10 @@ This litte project was inspired by a [youtube video](https://youtu.be/7Y8Ppin12r
 - Using your favourite editor (vscode), edit the line 7 in the create_project.py script to match your file structure.
 
 ```py
+# For Windows
 chgDir = os.chdir('C:\\Users\\phil4\\Documents\\development')
+# For Linux
+chgDir = os.chdir('/home/sspade/Documents/development')
 ```
 
 - Open a Powershell terminal and run: (change folder name to match whatever name you want)
