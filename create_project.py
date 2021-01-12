@@ -47,7 +47,7 @@ def createFolder():
         print(f'{foldername} created locally')
         
     except:
-        print("create <project_name> l")
+        print(f"create {foldername} failed")
 
 
 createFolder()
