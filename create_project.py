@@ -11,6 +11,9 @@ import os
 
 # TODO: Change path to match your environment
 chgDir = os.chdir('/home/sspade/Documents/development')
+# An example of how to set this in Windows
+# 
+# chgDir = os.chdir('C:\\Users\\phil4\\Documents\\development')
 
 # This script expects an argument that will be the folder name to create
 foldername = str(sys.argv[1])
