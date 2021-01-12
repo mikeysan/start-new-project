@@ -5,15 +5,21 @@ import os
     USAGE: python create_project.py [folder-name]
 '''
 
+# I am extracting the local username from the path to make it easier to change
+# TODO: Change the value of local_user to match your system login name
+# TODO: Change the value of github_user to match your GitHub user name
+local_user = 'sspade'
+github_user = 'mikeysan'
+
 # Change current working directory of this script to match where you would like to create your 
 # new project folder
 # CHANGE THIS LINE TO MATCH YOUR USE CASE
 
 # TODO: Change path to match your environment
-chgDir = os.chdir('/home/sspade/Documents/development')
+chgDir = os.chdir(f'/home/{local_user}/Documents/development')
 # An example of how to set this in Windows
 # 
-# chgDir = os.chdir('C:\\Users\\phil4\\Documents\\development')
+# chgDir = os.chdir(f'C:\\Users\\{local_user}\\Documents\\development')
 
 # This script expects an argument that will be the folder name to create
 foldername = str(sys.argv[1])
@@ -53,7 +59,7 @@ if os.path.dirname(_dir):
     print("New Project folder created and ready")
     try:
         os.system(f'gh repo create {foldername} -y --public ')
-        os.system(f'git remote add origin https://github.com/mikeysan/{foldername}')
+        os.system(f'git remote add origin https://github.com/{github_user}/{foldername}')
         os.system('git push -u origin main')
     except:
         print("You may not have GitHub CLI installed\n")
