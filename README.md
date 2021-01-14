@@ -13,7 +13,9 @@ This litte project was inspired by a [youtube video](https://youtu.be/7Y8Ppin12r
 
 
 ## How to use the script
-
+- UPDATE: Inncluded an option to setup a virtual environment when the folder is created.
+  The environment is not activated by default but that can be done later when you are ready to start working on your project.
+- For the Virtual Environment to work, you will need to run `pip3 install virtualenv` or run `pip3 install -r requirements.txt`.
 - Using your favourite editor (vscode), edit the line 7 in the create_project.py script to match your file structure.
 
 ```py

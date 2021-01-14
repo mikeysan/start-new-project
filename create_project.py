@@ -39,6 +39,7 @@ def createFolder():
         os.mkdir(_dir)
         os.chdir(_dir)
         os.system('git init')
+        os.system('virtualenv venv')
         os.system(f'echo "# {foldername}" > README.md')
         os.system('git add README.md')
         os.system('git commit -m "first commit"')
